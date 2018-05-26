@@ -42,6 +42,27 @@ of human and bot players.
 8. create a game room, join the game, and wait
 9. bots will join the game to play
 
+## Updated Install instructions
+Ok. I got it to work. For anyone that's interested. heres the instructions how to run it(at least how I did it):
+Before you begin uninstall all previous node.js or npm on system and even clear caches or delete node directory just to be safe.
+
+    download latest node.js(for me its x64 windows so i downloaded 6.11.2) and install it on your system.
+    clone project by typing
+    git clone https://github.com/vampserv/node-poker-stack.git
+    cd node-poker-stack:
+    Install pomelo globally(on windows it installs to C:\Users[yourusername]\AppData\Roaming\npm\node_modules):
+    npm install -g pomelo
+    install game:
+    sh npm-install.sh
+    run webserver:
+    node web-server/app
+    open another bash and run game server:
+    cd game-server
+    pomelo start
+    open web browser and load page:
+    localhost:3002
+
+9 If everything went well. try to register and user name and password and u will be able to login.
 
 ## License
 
